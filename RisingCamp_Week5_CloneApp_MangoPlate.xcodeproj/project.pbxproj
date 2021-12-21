@@ -13,9 +13,11 @@
 		581263FA2770A89B009B958C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 581263F82770A89B009B958C /* Main.storyboard */; };
 		581263FC2770A89B009B958C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 581263FB2770A89B009B958C /* Assets.xcassets */; };
 		581263FF2770A89B009B958C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 581263FD2770A89B009B958C /* LaunchScreen.storyboard */; };
+		B0499B40970D6F6B4ABA25A2 /* Pods_RisingCamp_Week5_CloneApp_MangoPlate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C02808EB7F413CEA21CE67 /* Pods_RisingCamp_Week5_CloneApp_MangoPlate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1AAE00128BC17873A527B884 /* Pods-RisingCamp_Week5_CloneApp_MangoPlate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RisingCamp_Week5_CloneApp_MangoPlate.release.xcconfig"; path = "Target Support Files/Pods-RisingCamp_Week5_CloneApp_MangoPlate/Pods-RisingCamp_Week5_CloneApp_MangoPlate.release.xcconfig"; sourceTree = "<group>"; };
 		581263EF2770A89B009B958C /* RisingCamp_Week5_CloneApp_MangoPlate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RisingCamp_Week5_CloneApp_MangoPlate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		581263F22770A89B009B958C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		581263F42770A89B009B958C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		581263FB2770A89B009B958C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		581263FE2770A89B009B958C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		581264002770A89B009B958C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6013868EEFC5A89C89301039 /* Pods-RisingCamp_Week5_CloneApp_MangoPlate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RisingCamp_Week5_CloneApp_MangoPlate.debug.xcconfig"; path = "Target Support Files/Pods-RisingCamp_Week5_CloneApp_MangoPlate/Pods-RisingCamp_Week5_CloneApp_MangoPlate.debug.xcconfig"; sourceTree = "<group>"; };
+		A0C02808EB7F413CEA21CE67 /* Pods_RisingCamp_Week5_CloneApp_MangoPlate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RisingCamp_Week5_CloneApp_MangoPlate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0499B40970D6F6B4ABA25A2 /* Pods_RisingCamp_Week5_CloneApp_MangoPlate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BB67C92606BBABA2AF14A09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6013868EEFC5A89C89301039 /* Pods-RisingCamp_Week5_CloneApp_MangoPlate.debug.xcconfig */,
+				1AAE00128BC17873A527B884 /* Pods-RisingCamp_Week5_CloneApp_MangoPlate.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		581263E62770A89A009B958C = {
 			isa = PBXGroup;
 			children = (
 				581263F12770A89B009B958C /* RisingCamp_Week5_CloneApp_MangoPlate */,
 				581263F02770A89B009B958C /* Products */,
+				0BB67C92606BBABA2AF14A09 /* Pods */,
+				C8F3E9A157F0C28D17107100 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = RisingCamp_Week5_CloneApp_MangoPlate;
 			sourceTree = "<group>";
 		};
+		C8F3E9A157F0C28D17107100 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0C02808EB7F413CEA21CE67 /* Pods_RisingCamp_Week5_CloneApp_MangoPlate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 581264032770A89B009B958C /* Build configuration list for PBXNativeTarget "RisingCamp_Week5_CloneApp_MangoPlate" */;
 			buildPhases = (
+				7E862BCC36A8D8E2EEDCBB10 /* [CP] Check Pods Manifest.lock */,
 				581263EB2770A89A009B958C /* Sources */,
 				581263EC2770A89A009B958C /* Frameworks */,
 				581263ED2770A89A009B958C /* Resources */,
+				65AAB3CF92DC7CE79DAD8FD5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65AAB3CF92DC7CE79DAD8FD5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RisingCamp_Week5_CloneApp_MangoPlate/Pods-RisingCamp_Week5_CloneApp_MangoPlate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RisingCamp_Week5_CloneApp_MangoPlate/Pods-RisingCamp_Week5_CloneApp_MangoPlate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RisingCamp_Week5_CloneApp_MangoPlate/Pods-RisingCamp_Week5_CloneApp_MangoPlate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E862BCC36A8D8E2EEDCBB10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RisingCamp_Week5_CloneApp_MangoPlate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		581263EB2770A89A009B958C /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		581264042770A89B009B958C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6013868EEFC5A89C89301039 /* Pods-RisingCamp_Week5_CloneApp_MangoPlate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		581264052770A89B009B958C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AAE00128BC17873A527B884 /* Pods-RisingCamp_Week5_CloneApp_MangoPlate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

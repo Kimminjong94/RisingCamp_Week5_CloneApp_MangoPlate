@@ -8,21 +8,72 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RisingCamp_Week5_CloneApp_MangoPlate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAs-dC-u4Y">
+                                <rect key="frame" x="0.0" y="88" width="414" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="N44-ml-u1l">
+                                        <rect key="frame" x="129" y="136" width="156" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </pageControl>
+                                </subviews>
+                            </scrollView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="bMz-dH-w02">
+                                <rect key="frame" x="260" y="258" width="144" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2EV-Dl-xqk">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="35"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="내주변"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yel-uv-FkR">
+                                        <rect key="frame" x="85" y="0.0" width="59" height="35"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="필터버튼"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="VwI-qy-gvg"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymT-n0-FTZ">
+                                <rect key="frame" x="0.0" y="258" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="l33-3U-OPQ"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="평점순∨"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bMz-dH-w02" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-10" id="3Mz-Pb-2gm"/>
+                            <constraint firstItem="bMz-dH-w02" firstAttribute="leading" secondItem="ymT-n0-FTZ" secondAttribute="trailing" constant="160" id="Goz-UR-xcJ"/>
+                            <constraint firstItem="bMz-dH-w02" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="260" id="OkB-6A-P48"/>
+                            <constraint firstItem="ymT-n0-FTZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Vqu-WA-tez"/>
+                            <constraint firstItem="bMz-dH-w02" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="170" id="Wcx-WB-tPJ"/>
+                            <constraint firstItem="ymT-n0-FTZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="170" id="fTa-Jh-bT5"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="pSJ-R3-Ptg"/>
+                    <navigationItem key="navigationItem" id="G26-Si-q21"/>
+                    <connections>
+                        <outlet property="pageControl" destination="N44-ml-u1l" id="h8J-tV-QLB"/>
+                        <outlet property="scrollView" destination="NAs-dC-u4Y" id="wxR-wS-MXY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="988" y="-400"/>
+            <point key="canvasLocation" x="1897.1014492753625" y="-400.44642857142856"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="lLT-OF-FxA">
@@ -30,11 +81,12 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="y1q-4a-azM" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mUb-x3-hH3">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="c14-A4-uKw"/>
+                        <segue destination="tAK-w6-aCM" kind="relationship" relationship="viewControllers" id="c14-A4-uKw"/>
                         <segue destination="lsg-g3-Vnz" kind="relationship" relationship="viewControllers" id="8Vq-Dl-eUw"/>
                         <segue destination="lnO-Ym-ltX" kind="relationship" relationship="viewControllers" id="K07-9Q-hQ9"/>
                         <segue destination="ee9-DN-buy" kind="relationship" relationship="viewControllers" id="vKQ-h1-n5J"/>
@@ -109,8 +161,29 @@
             </objects>
             <point key="canvasLocation" x="987" y="1671"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="hjQ-pM-wd1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tAK-w6-aCM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="pSJ-R3-Ptg"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rRf-7R-Qi6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AcX-G6-s3D"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R4n-4J-wf7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986.95652173913049" y="-400.44642857142856"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="내주변" width="256" height="103"/>
+        <image name="필터버튼" width="185" height="96"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
